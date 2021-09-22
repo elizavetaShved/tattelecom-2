@@ -1,47 +1,131 @@
+$slider-padding-top-bottom-desk: 3.6rem;
+$slider-padding-right-left-desk: 4rem;
+
 .rates-preview {
-  position: relative;
-  height: 47rem;
-  color: #fff;
-  padding: 2rem 0;
+  margin-bottom: 10rem;
 }
 
-.rates-preview__main-image {
+.rates-preview__content-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 6rem;
+}
+
+.rates-preview__slider-container {
+  position: relative;
+}
+
+.rates-preview__slider-slide {
+  padding: $slider-padding-top-bottom-desk $slider-padding-right-left-desk 10rem $slider-padding-top-bottom-desk;
+  background-color: var(--secondary-background);
+  border-radius: 20px;
+  position: relative;
+  min-height: 50rem;
+  z-index: 1;
+}
+
+.rates-preview__slide-title {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 2.4rem;
+}
+
+.rates-preview__slide-subtitle {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.rates-preview__slide-background {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
 }
 
-.rates-preview__content-wrapper {
+.rates-preview__controls-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: $slider-padding-top-bottom-desk $slider-padding-right-left-desk;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.rates-preview__slider-controls {
+  display: flex;
+  align-items: center;
+}
+
+.rates-preview__slider-btns-wrapper {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.rates-preview__slider-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & + & {
+    margin-left: 1rem;
+  }
+}
+
+.rates-preview__application {
+  padding: 2.4rem;
+  background-color: var(--main-background);
+  border-radius: 20px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.rates-preview__content {
-  max-width: 45rem;
-}
-
-.rates-preview__content-title {
-  font-size: 3.4rem;
-  line-height: 4rem;
+.rates-preview__application-head {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 2rem;
 }
 
-.rates-preview__content-subtitle {
-  font-weight: 600;
-  font-size: 4.4rem;
-  line-height: 5.4rem;
-  margin-bottom: 1.2rem;
-  text-transform: uppercase;
+.rates-preview__application-head-logo-emblem {
+  height: 10.2rem;
 }
 
-.rates-preview__content-caption {
-  font-weight: 300;
-  font-size: 2rem;
-  line-height: 2.4rem;
-  margin-bottom: 5.2rem;
+.rates-preview__application-head-logo-text {
+  height: 4rem;
+}
+
+.rates-preview__application-head-title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.rates-preview__application-head-subtitle {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.rates-preview__application-form {
+
+}
+
+.rates-preview__application-btn {
+  padding: 1.2rem 1.6rem;
+  width: min-content;
+  margin-top: 3rem;
 }

@@ -583,6 +583,25 @@ nav ul {
   letter-spacing: 0.02em;
   color: #A6A6A6; }
 
+.gl-input__input {
+  background-color: #fff;
+  border: 1px solid #E4EAEF;
+  border-radius: 20px;
+  padding: 1.4rem 2rem;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 3rem; }
+  .gl-input__input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.2); }
+  .gl-input__input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.2); }
+  .gl-input__input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.2); }
+  .gl-input__input::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.2); }
+  .gl-input__input::placeholder {
+    color: rgba(0, 0, 0, 0.2); }
+
 .header__top-block {
   background-color: var(--main-background); }
 
@@ -871,50 +890,141 @@ nav ul {
   fill: #A6A6A6; }
 
 .rates-preview {
-  position: relative;
-  height: 47rem;
-  color: #fff;
-  padding: 2rem 0; }
+  margin-bottom: 10rem; }
 
-.rates-preview__main-image {
+.rates-preview__content-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 6rem; }
+
+.rates-preview__slider-container {
+  position: relative; }
+
+.rates-preview__slider-slide {
+  padding: 3.6rem 4rem 10rem 3.6rem;
+  background-color: var(--secondary-background);
+  border-radius: 20px;
+  position: relative;
+  min-height: 50rem;
+  z-index: 1; }
+
+.rates-preview__slide-title {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 2.4rem; }
+
+.rates-preview__slide-subtitle {
+  font-size: 2rem;
+  line-height: 2.4rem; }
+
+.rates-preview__slide-background {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1; }
 
-.rates-preview__content-wrapper {
+.rates-preview__controls-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 3.6rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1; }
 
-.rates-preview__content {
-  max-width: 45rem; }
+.rates-preview__slider-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-.rates-preview__content-title {
-  font-size: 3.4rem;
-  line-height: 4rem;
+.rates-preview__slider-btns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3rem; }
+
+.rates-preview__slider-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .rates-preview__slider-btn + .rates-preview__slider-btn {
+    margin-left: 1rem; }
+
+.rates-preview__application {
+  padding: 2.4rem;
+  background-color: var(--main-background);
+  border-radius: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.rates-preview__application-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 2rem; }
 
-.rates-preview__content-subtitle {
-  font-weight: 600;
-  font-size: 4.4rem;
-  line-height: 5.4rem;
-  margin-bottom: 1.2rem;
-  text-transform: uppercase; }
+.rates-preview__application-head-logo-emblem {
+  height: 10.2rem; }
 
-.rates-preview__content-caption {
-  font-weight: 300;
-  font-size: 2rem;
-  line-height: 2.4rem;
-  margin-bottom: 5.2rem; }
+.rates-preview__application-head-logo-text {
+  height: 4rem; }
+
+.rates-preview__application-head-title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  margin-bottom: 2rem; }
+
+.rates-preview__application-head-subtitle {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 2.4rem; }
+
+.rates-preview__application-btn {
+  padding: 1.2rem 1.6rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-top: 3rem; }
 
 .rates-list {
   padding: 8rem 0; }
@@ -1137,27 +1247,6 @@ nav ul {
       -ms-flex-align: end;
           align-items: end;
   grid-gap: 1.4rem; }
-
-.gl-input__input {
-  background-color: #fff;
-  -webkit-box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
-          box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 16px rgba(51, 51, 51, 0.08);
-  border-radius: 4px;
-  padding: 1.4rem 1.6rem;
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.02em; }
-  .gl-input__input::-webkit-input-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input::-moz-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input:-ms-input-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input::-ms-input-placeholder {
-    color: #A6A6A6; }
-  .gl-input__input::placeholder {
-    color: #A6A6A6; }
 
 .services__btn-submit.mod-transparent {
   padding-left: 2rem;

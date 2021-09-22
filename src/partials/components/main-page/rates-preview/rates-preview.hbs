@@ -1,0 +1,38 @@
+<section class="rates-preview" id="rates-preview-host">
+  <div class="gl__page-content rates-preview__content-wrapper">
+    <div class="rates-preview__slider-container">
+      <ul class="rates-preview__slider-wrapper">
+        {{> main-page/rates-preview/components/slide
+          slideTitle="Тариф «Летай.Оранжевый»"
+          slideSubtitle="Мощный интернет + ТВ 160 каналов"
+          slideImage="img/main-page/rates-preview/rates-preview-1.png"
+        }}
+      </ul>
+
+      {{> main-page/rates-preview/components/controls }}
+    </div>
+
+    <div class="rates-preview__application">
+      <div>
+        <div class="rates-preview__application-head">
+          <img src="img/main-page/rates-preview/logo-fly-emblem.png" alt="" class="rates-preview__application-head-logo-emblem">
+          <img src="img/main-page/rates-preview/logo-fly-text.svg" alt="" class="rates-preview__application-head-logo-text">
+        </div>
+
+        <div class="rates-preview__application-head-title">Стать абонентом Летай</div>
+        <div class="rates-preview__application-head-subtitle">
+          Оставьте заявку, мы перезвоним вам в течение 15 минут с 8 до 20
+        </div>
+      </div>
+
+      <form>
+        {{> common/input-main
+          type="tel"
+          placeholder="+7 000 000-00-00"
+          name="rates-preview-tel"
+        }}
+        <button type="submit" class="gl__main-btn rates-preview__application-btn">Оставить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
