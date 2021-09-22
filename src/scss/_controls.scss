@@ -27,7 +27,13 @@
 
   &.mod-dark-background {
     background-color: transparent;
-    border-color: #fff;
+    border-color: var(--main-color);
+
+    &:hover {
+      background: var(--main-color);
+      color: #fff;
+      border-color: transparent;
+    }
   }
 }
 
