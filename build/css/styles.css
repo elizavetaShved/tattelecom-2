@@ -3,7 +3,7 @@
   --page-content-padding-md-down: 30px;
   --page-content-padding-small: 20px;
   --page-content-padding-xxs-down: 16px;
-  --font-museo-sans-cyrl: 'MuseoSansCyrl';
+  --font-golos: 'Golos';
   --main-color: #F04E37;
   --main-background: #E7F2FA;
   --secondary-background: #FFDDD0;
@@ -25,11 +25,14 @@
     background: #ff7846; }
   .gl__main-btn.mod-transparent {
     background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff; }
+    color: var(--main-color);
+    border-color: var(--main-color); }
     .gl__main-btn.mod-transparent:hover {
       background: var(--main-color);
-      border-color: transparent; }
+      color: #fff; }
+  .gl__main-btn.mod-dark-background {
+    background-color: transparent;
+    border-color: #fff; }
 
 .gl__link-show-all {
   font-size: 1.6rem;
@@ -93,30 +96,23 @@
   fill: var(--main-color); }
 
 @font-face {
-  font-family: 'MuseoSansCyrl';
-  src: url("../assets/fonts/subset-MuseoSansCyrl-900.woff2") format("woff2"), url("../assets/fonts/subset-MuseoSansCyrl-900.woff") format("woff");
+  font-family: 'Golos';
+  src: url("../assets/fonts/subset-GolosText-Bold.woff2") format("woff2"), url("../assets/fonts/subset-GolosText-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'MuseoSansCyrl';
-  src: url("../assets/fonts/subset-MuseoSansCyrl-700.woff2") format("woff2"), url("../assets/fonts/subset-MuseoSansCyrl-700.woff") format("woff");
-  font-weight: 700;
+  font-family: 'Golos';
+  src: url("../assets/fonts/subset-GolosText-Medium.woff2") format("woff2"), url("../assets/fonts/subset-GolosText-Medium.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'MuseoSansCyrl';
-  src: url("../assets/fonts/subset-MuseoSansCyrl-500.woff2") format("woff2"), url("../assets/fonts/subset-MuseoSansCyrl-500.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'MuseoSansCyrl';
-  src: url("../assets/fonts/subset-MuseoSansCyrl-300.woff2") format("woff2"), url("../assets/fonts/subset-MuseoSansCyrl-300.woff") format("woff");
-  font-weight: 300;
+  font-family: 'Golos';
+  src: url("../assets/fonts/subset-GolosText-Regular.woff2") format("woff2"), url("../assets/fonts/subset-GolosText-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
@@ -330,7 +326,7 @@ html, body {
   -webkit-font-smoothing: antialiased; }
 
 *, *:before, *:after {
-  font-family: var(--font-museo-sans-cyrl), sans-serif;
+  font-family: var(--font-golos), sans-serif;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -705,9 +701,8 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.header__logo + .header__logo {
-  border-left: 1px solid #E7F2FA; }
+  .header__logo-link + .header__logo-link {
+    border-left: 1px solid #E7F2FA; }
 
 .header__logo.mod-tat {
   height: 2rem; }
@@ -959,7 +954,18 @@ nav ul {
   padding-bottom: 1.8rem; }
 
 .rates-list__slide-content {
-  z-index: 2; }
+  z-index: 2;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .rates-list__slide-title {
   font-weight: 600;

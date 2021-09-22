@@ -86,12 +86,13 @@
   padding: 2.4rem;
   display: flex;
   align-items: center;
-}
 
-.header__logo {
   & + & {
     border-left: 1px solid #E7F2FA;
   }
+}
+
+.header__logo {
 
   &.mod-tat {
     height: 2rem;

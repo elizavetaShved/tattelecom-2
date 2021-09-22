@@ -16,13 +16,18 @@
 
   &.mod-transparent {
     background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    color: var(--main-color);
+    border-color: var(--main-color);
 
     &:hover {
       background: var(--main-color);
-      border-color: transparent;
+      color: #fff;
     }
+  }
+
+  &.mod-dark-background {
+    background-color: transparent;
+    border-color: #fff;
   }
 }
 
