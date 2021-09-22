@@ -1,0 +1,65 @@
+<section class="rates-list" id="rates-list-host">
+  <div class="gl__page-content">
+    <div class="gl__title-head">
+      <h2 class="gl__title">
+        Тарифы мобильной связи
+      </h2>
+      {{> common/link-show-all text="Все тарифы" }}
+    </div>
+
+    <div class="gl-slider__container">
+      <ul class="gl-slider__wrapper">
+        {{> main-page/rates-list/components/slide
+          isHit=true
+          title="Много минут"
+          subtitle="Перейти по USSD *116*201#"
+          unlimited=true
+          calls1="500 мин. звонки по РТ"
+          calls2="300 мин. звонки по РФ"
+          calls3="Безлимитные звонки на Летай"
+          opportunities="Смартфоны в рассрочку Кешбек 20%"
+          price="350"
+        }}
+        {{> main-page/rates-list/components/slide
+          title="Много интернета"
+          subtitle="Перейти по USSD *116*204#"
+          unlimited=true
+          calls1="200 мин. звонки по РТ"
+          opportunities="Смартфоны в рассрочку Кешбек 20%"
+          price="240"
+        }}
+        {{> main-page/rates-list/components/slide
+          title="Много минут"
+          subtitle="Перейти по USSD *116*201#"
+          unlimited=true
+          calls1="500 мин. звонки по РТ"
+          calls2="300 мин. звонки по РФ"
+          calls3="Безлимитные звонки на Летай"
+          opportunities="Смартфоны в рассрочку Кешбек 20%"
+          price="350"
+        }}
+        {{> main-page/rates-list/components/slide
+          title="Много минут"
+          subtitle="Перейти по USSD *116*201#"
+          unlimited=true
+          calls1="500 мин. звонки по РТ"
+          calls2="300 мин. звонки по РФ"
+          calls3="Безлимитные звонки на Летай"
+          opportunities="Смартфоны в рассрочку Кешбек 20%"
+          price="350"
+        }}
+      </ul>
+
+      <button type="button" class="gl-slider__slider-btn mod-prev">
+        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
+          <use xlink:href="#arrow-left"></use>
+        </svg>
+      </button>
+      <button type="button" class="gl-slider__slider-btn mod-next">
+        <svg width="26" height="26" aria-hidden="true" class="gl-slider__slider-btn-icon">
+          <use xlink:href="#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
