@@ -1241,6 +1241,109 @@ nav ul {
   .rates-list__slide-hint-icon:hover {
     fill: var(--main-color-hover); }
 
+.beautiful-phone {
+  margin-bottom: 10rem; }
+
+.beautiful-phone__content {
+  border: 1px solid #C7CED3;
+  border-radius: 30px;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.beautiful-phone__title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 1rem; }
+
+.beautiful-phone__subtitle {
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 7rem; }
+
+.beautiful-phone__phone-wrapper {
+  margin-bottom: 6rem;
+  position: relative; }
+
+.beautiful-phone__phone {
+  font-weight: 500;
+  line-height: 1;
+  font-size: 16rem;
+  letter-spacing: 0.02em; }
+  .beautiful-phone__phone .fix-elem {
+    color: #C7CED3; }
+
+.beautiful-phone__bnt-generate {
+  position: absolute;
+  top: -4rem;
+  right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .beautiful-phone__bnt-generate:hover .beautiful-phone__bnt-generate-icon-wrapper:before {
+    width: 12rem;
+    height: 12rem;
+    opacity: 1; }
+
+.beautiful-phone__bnt-generate-icon-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-right: 2.6rem; }
+  .beautiful-phone__bnt-generate-icon-wrapper:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: var(--main-background);
+    border-radius: 100%;
+    z-index: -1;
+    -webkit-transition: width 500ms, height 500ms, opacity 1000ms;
+    transition: width 500ms, height 500ms, opacity 1000ms;
+    opacity: 0; }
+
+.beautiful-phone__bnt-generate-icon {
+  height: 4.2rem; }
+
+.beautiful-phone__bnt-generate-text {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  z-index: 1; }
+
+.beautiful-phone__btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.beautiful-phone__main-btn + .beautiful-phone__main-btn {
+  margin-left: 2rem; }
+
 .services {
   background-color: #F5F5F5;
   padding: 8rem 0; }
