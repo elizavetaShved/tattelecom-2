@@ -7,8 +7,9 @@
 }
 
 .gl-slider__slide {
+  width: 100%;
   & + & {
-    margin-left: 3rem;
+    margin-left: 6rem;
   }
 }
 
@@ -18,9 +19,6 @@
   transform: translateY(-50%);
   width: 5rem;
   height: 5rem;
-  background-color: #fff;
-  box-shadow: 0 0.266004px 10px rgba(153, 152, 168, 0.2);
-  border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;

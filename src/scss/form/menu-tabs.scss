@@ -1,0 +1,48 @@
+.gl-menu__container {
+  display: flex;
+}
+
+.gl-menu__radio-wrapper {
+  & + & {
+    margin-left: 2rem;
+  }
+}
+
+.gl-menu__radio {
+  display: none;
+
+  &:checked {
+    + .gl-menu__radio-content {
+      color: var(--main-color);
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.gl-menu__radio-content {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02em;
+  color: #C7CED3;
+  padding: 1.6rem 0;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px rgba(240, 78, 55, 0.5), 0 45px 103px rgba(250, 73, 7, 0.6), 0 11.9041px 27.2471px rgba(250, 73, 7, 0.6), 0 7.22568px 16.5388px rgba(250, 73, 7, 0.6), 0 4.35379px 9.96535px rgba(240, 78, 55, 0.6), 0 2.42447px 5.54935px rgba(240, 78, 55, 0.6), 0 1.04275px 2.38674px rgba(250, 73, 7, 0.6);
+    opacity: 0;
+    transition: opacity 250ms;
+  }
+}

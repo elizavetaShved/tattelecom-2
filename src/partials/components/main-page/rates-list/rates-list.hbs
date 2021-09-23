@@ -1,9 +1,15 @@
 <section class="rates-list" id="rates-list-host">
   <div class="gl__page-content">
-    <div class="gl__title-head">
-      <h2 class="gl__title">
-        Тарифы мобильной связи
-      </h2>
+    <h2 class="gl__title">
+      Тарифы
+    </h2>
+
+    <div class="rates-list__head-wrapper">
+      {{> common/menu-radio
+        menuItemName="rates-list-menu"
+        menuItemTitle1="Мобильная связь" menuItemTitle2="Интернет" menuItemTitle3="Телевидение"
+      }}
+
       {{> common/link-show-all text="Все тарифы" }}
     </div>
 
@@ -13,40 +19,45 @@
           isHit=true
           title="Много минут"
           subtitle="Перейти по USSD *116*201#"
-          unlimited=true
-          calls1="500 мин. звонки по РТ"
-          calls2="300 мин. звонки по РФ"
-          calls3="Безлимитные звонки на Летай"
-          opportunities="Смартфоны в рассрочку Кешбек 20%"
-          price="350"
+          calls1="100 Мбит/с безлимитного интернета"
+          calls2="500 мин. звонки по РТ"
+          calls3="300 мин. звонки по РФ"
+          calls4="Безлимитные звонки на Летай"
+          opportunities1="Смартфоны в рассрочку"
+          opportunities2="Мощный Wi-Fi за 30 ₽"
+          price="0"
         }}
         {{> main-page/rates-list/components/slide
           title="Много интернета"
           subtitle="Перейти по USSD *116*204#"
-          unlimited=true
-          calls1="200 мин. звонки по РТ"
-          opportunities="Смартфоны в рассрочку Кешбек 20%"
+          calls1="Безлимитный интернет"
+          calls2="200 мин. звонки по РТ"
+          opportunities1="Смартфоны в рассрочку Кешбек 20%"
           price="240"
+          pricePerMonth=true
         }}
         {{> main-page/rates-list/components/slide
           title="Много минут"
           subtitle="Перейти по USSD *116*201#"
-          unlimited=true
-          calls1="500 мин. звонки по РТ"
-          calls2="300 мин. звонки по РФ"
-          calls3="Безлимитные звонки на Летай"
-          opportunities="Смартфоны в рассрочку Кешбек 20%"
+          calls1="Безлимитный интернет"
+          calls2="500 мин. звонки по РТ"
+          calls3="300 мин. звонки по РФ"
+          calls4="Безлимитные звонки на Летай"
+          opportunities1="Смартфоны в рассрочку Кешбек 20%"
           price="350"
+          pricePerMonth=true
         }}
         {{> main-page/rates-list/components/slide
           title="Много минут"
           subtitle="Перейти по USSD *116*201#"
-          unlimited=true
-          calls1="500 мин. звонки по РТ"
-          calls2="300 мин. звонки по РФ"
-          calls3="Безлимитные звонки на Летай"
-          opportunities="Смартфоны в рассрочку Кешбек 20%"
+          calls1="Безлимитный интернет"
+          calls2="500 мин. звонки по РТ"
+          calls3="300 мин. звонки по РФ"
+          calls4="Безлимитные звонки на Летай"
+          opportunities1="Смартфоны в рассрочку"
+          opportunities2="Мощный Wi-Fi за 30 ₽"
           price="350"
+          pricePerMonth=true
         }}
       </ul>
 

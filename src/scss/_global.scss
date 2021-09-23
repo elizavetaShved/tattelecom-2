@@ -34,24 +34,11 @@
   flex: 1 1 100%;
 }
 
-.gl__title-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: -1rem;
-  margin-right: -1rem;
-  margin-bottom: 4rem;
-
-  .gl__title {
-    margin-bottom: 0;
-  }
-}
-
 .gl__title {
-  font-size: 3.8rem;
-  line-height: 5rem;
-  letter-spacing: 0.015em;
-  margin-bottom: 5rem;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 4rem;
 }
 
 .gl__white-container {

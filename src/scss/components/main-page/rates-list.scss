@@ -2,15 +2,23 @@
   padding: 8rem 0;
 }
 
+.rates-list__head-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4.6rem;
+}
+
 .rates-list__slide {
-  padding: 2.2rem 1.6rem;
+  padding: 2rem 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 60rem;
 }
 
 .rates-list__slide-hit {
-  background-color: #2B2B2B;
+  background-color: #000;
   position: relative;
   color: #fff;
 
@@ -21,13 +29,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .rates-list__slide-hit-mark {
-    position: absolute;
-    top: 0;
-    right: 2.4rem;
-    height: 3.8rem;
   }
 }
 
@@ -45,91 +46,95 @@
 
 .rates-list__slide-title {
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 2.6rem;
-  margin-bottom: .6rem;
+  font-size: 3rem;
+  line-height: 3.4rem;
+  margin-bottom: 1rem;
 }
 
 .rates-list__slide-subtitle {
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
   margin-bottom: 3rem;
 }
 
-.rates-list__slide-condition-item {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+.rates-list__slide-item {
+  font-size: 1.8rem;
+  line-height: 2rem;
   display: flex;
   align-items: center;
+  padding-left: 2rem;
+  position: relative;
 
   & + & {
-    margin-top: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: .6rem;
+    left: 0;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 100%;
+    background-color: var(--main-color);
   }
 }
 
-.rates-list__slide-condition-item-icon {
-  height: 2rem;
-  margin-right: 1rem;
-}
-
 .rates-list__opportunities-wrapper {
-  border-top: 1px solid #F5F5F5;
-  padding: .8rem 0 1.6rem 0;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 4.2rem;
 }
 
 .rates-list__opportunities-title {
-  color: #ADADAD;
-  margin-bottom: 1.2rem;
+  opacity: .3;
+  margin-bottom: 1rem;
 }
 
 .rates-list__opportunities-text {
   max-width: 80%;
 }
 
-.rates-list__slide-price-wrapper {
-  border-top: 1px solid #F5F5F5;
-  padding-top: 2.8rem;
-  margin-bottom: 1.4rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .rates-list__slide-price {
-  .big {
-    font-size: 4rem;
-    line-height: 5rem
-  }
+  margin-bottom: 1.4rem;
+  font-size: 4.6rem;
+  line-height: 5.4rem;
+  display: flex;
+  align-items: start;
+  font-weight: 600;
 
   .small {
-    font-size: 1.8rem;
-    line-height: 2.2rem
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    font-weight: bold;
+    padding-left: .8rem;
   }
 }
 
 .rates-list__slide-btns-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin-right: -1.4rem;
 }
 
 .rates-list__slide-btn-plug {
   width: 100%;
 }
 
-.rates-list__slide-link-detailed-wrapper {
-  margin: 0 -1.4rem -1.4rem -1.4rem;
+.rates-list__slide-hint-btn {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 1rem;
 }
 
-.rates-list__slide-link-detailed {
-  font-weight: 300;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  padding: 1.4rem;
-  display: block;
+.rates-list__slide-hint-icon {
+  height: 100%;
+  fill: var(--main-color);
 
   &:hover {
-    text-decoration: underline;
+    fill: var(--main-color-hover);
   }
 }
+

@@ -1,61 +1,55 @@
 <li class="rates-list__slide gl-slider__slide gl__white-container  {{#if isHit }}rates-list__slide-hit{{/if}}">
   {{#if isHit }}
-    <img src="img/main-page/rates-list/hit-background.svg" alt="" class="rates-list__slide-hit-background">
-    <img src="img/main-page/rates-list/hit-mark.svg" alt="" class="rates-list__slide-hit-mark">
+    <img src="img/main-page/rates-list/hit-background.png" alt="" class="rates-list__slide-hit-background">
   {{/if}}
   <div class="rates-list__slide-content">
     <div class="rates-list__slide-up">
       <div class="rates-list__slide-title">{{ title }}</div>
       <div class="rates-list__slide-subtitle">{{ subtitle }}</div>
 
-      <ul class="rates-list__slide-conditions-list">
-        {{#if unlimited }}
-          <li class="rates-list__slide-condition-item">
-            <img src="img/main-page/rates-list/unlimited.svg" alt="" class="rates-list__slide-condition-item-icon">
-            <div class="rates-list__slide-condition-item-text">Безлимитный интернет</div>
-          </li>
-        {{/if}}
+      <ul class="rates-list__slide-list">
         {{#if calls1 }}
-          <li class="rates-list__slide-condition-item">
-            <img src="img/main-page/rates-list/phone-1.svg" alt="" class="rates-list__slide-condition-item-icon">
-            <div class="rates-list__slide-condition-item-text">{{ calls1 }}</div>
-          </li>
+          <li class="rates-list__slide-item">{{ calls1 }}</li>
         {{/if}}
         {{#if calls2 }}
-          <li class="rates-list__slide-condition-item">
-            <img src="img/main-page/rates-list/phone-2.svg" alt="" class="rates-list__slide-condition-item-icon">
-            <div class="rates-list__slide-condition-item-text">{{ calls2 }}</div>
-          </li>
+          <li class="rates-list__slide-item">{{ calls2 }}</li>
         {{/if}}
         {{#if calls3 }}
-          <li class="rates-list__slide-condition-item">
-            <img src="img/main-page/rates-list/phone-3.svg" alt="" class="rates-list__slide-condition-item-icon">
-            <div class="rates-list__slide-condition-item-text">{{ calls3 }}</div>
-          </li>
+          <li class="rates-list__slide-item">{{ calls3 }}</li>
+        {{/if}}
+        {{#if calls4 }}
+          <li class="rates-list__slide-item">{{ calls4 }}</li>
         {{/if}}
       </ul>
+
+
+      <div class="rates-list__opportunities-wrapper">
+        <div class="rates-list__opportunities-title">Возможности</div>
+        <ul class="rates-list__slide-list">
+          {{#if opportunities1 }}
+            <li class="rates-list__slide-item">{{ opportunities1 }}</li>
+          {{/if}}
+          {{#if opportunities2 }}
+            <li class="rates-list__slide-item">{{ opportunities2 }}</li>
+          {{/if}}
+        </ul>
+      </div>
+
     </div>
 
     <div class="rates-list__slide-down">
-      {{#if opportunities }}
-        <div class="rates-list__opportunities-wrapper">
-          <div class="rates-list__opportunities-title">Возможности</div>
-
-          <div class="rates-list__opportunities-text">{{ opportunities }}</div>
-        </div>
-      {{/if}}
-
-      <div class="rates-list__slide-price-wrapper">
-        <div class="rates-list__slide-price">
-          <span class="big">{{ price }}</span><span class="small">₽/мес</span>
-        </div>
+      <div class="rates-list__slide-price">
+        {{ price }}₽
+        {{#if pricePerMonth }}<span class="small">/мес</span>{{/if}}
       </div>
 
       <div class="rates-list__slide-btns-wrapper">
         <button type="button" class="rates-list__slide-btn-plug gl__main-btn">Подключить</button>
-        <div class="rates-list__slide-link-detailed-wrapper">
-          <a href="" class="rates-list__slide-link-detailed">Подробнее о тарифе</a>
-        </div>
+        <button type="button" class="rates-list__slide-hint-btn">
+          <svg width="50" height="50" aria-hidden="true" class="rates-list__slide-hint-icon">
+            <use xlink:href="#hint"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
