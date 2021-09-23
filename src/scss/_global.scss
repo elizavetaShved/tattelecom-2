@@ -144,3 +144,47 @@ section {
   line-height: 2rem;
   letter-spacing: 0.02em;
 }
+
+.gl-border-section__content {
+  border: 1px solid #C7CED3;
+  border-radius: 30px;
+  padding: 4rem;
+  min-height: 48rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gl-border-section__title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.gl-border-section__subtitle {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 7rem;
+}
+
+
+.gl__form-hint {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.02em;
+  color: #ABB6BC;
+  max-width: 37.2rem;
+  margin-top: 3rem;
+
+  .link {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
