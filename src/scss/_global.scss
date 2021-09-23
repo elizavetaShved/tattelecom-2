@@ -1,5 +1,40 @@
 @import 'sizes';
 
+a {
+  cursor: pointer;
+  transition: color 250ms;
+
+  &:hover {
+    color: var(--main-color);
+
+    svg {
+      fill: var(--main-color);
+    }
+  }
+}
+
+svg {
+  transition: fill 250ms;
+}
+
+button {
+  &:hover {
+    svg {
+      fill: var(--main-color);
+    }
+  }
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+::selection {
+  color: white;
+  background-color: var(--main-color);
+}
+
+
 .gl__page-content {
   padding-left: var(--page-content-padding-fl);
   padding-right: var(--page-content-padding-fl);

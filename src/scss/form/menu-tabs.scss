@@ -33,16 +33,23 @@
   position: relative;
   user-select: none;
 
-  &:before {
+  &:before, &:after {
     position: absolute;
     content: '';
     width: 100%;
     height: 2px;
-    top: 0;
     left: 0;
     background-color: var(--main-color);
     box-shadow: 0 0 10px rgba(240, 78, 55, 0.5), 0 45px 103px rgba(250, 73, 7, 0.6), 0 11.9041px 27.2471px rgba(250, 73, 7, 0.6), 0 7.22568px 16.5388px rgba(250, 73, 7, 0.6), 0 4.35379px 9.96535px rgba(240, 78, 55, 0.6), 0 2.42447px 5.54935px rgba(240, 78, 55, 0.6), 0 1.04275px 2.38674px rgba(250, 73, 7, 0.6);
     opacity: 0;
     transition: opacity 250ms;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
   }
 }

@@ -54,20 +54,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  cursor: pointer;
-  transition: color 250ms;
-
-  &:hover {
-    color: var(--main-color);
-
-    svg {
-      fill: var(--main-color);
-    }
-  }
-}
-
-svg {
-  transition: fill 250ms;
 }
 
 button {
@@ -75,12 +61,6 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
-
-  &:hover {
-    svg {
-      fill: var(--main-color);
-    }
-  }
 }
 
 table {
@@ -126,9 +106,4 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 nav ul {
   list-style: none;
-}
-
-::selection {
-  color: white;
-  background-color: var(--main-color);
 }

@@ -1,12 +1,23 @@
 <section class="useful-information" id="useful-information-host">
-  <div class="gl__page-content">
-    <h2 class="gl__title">Полезная информация</h2>
-    <div class="gl-slider__container">
-      <ul class="gl-slider__wrapper">
-        {{> main-page/useful-information/components/slide img="img/main-page/useful-information/image.jpg" title="Домофония" }}
-        {{> main-page/useful-information/components/slide img="img/main-page/useful-information/image.jpg" title="Роуминг" }}
-        {{> main-page/useful-information/components/slide img="img/main-page/useful-information/image-2.jpg" title="Приложения Таттелеком" }}
-      </ul>
-    </div>
-  </div>
+  <h2 class="gl__title">Полезная информация</h2>
+  <ul class="useful-information__list">
+    {{> main-page/useful-information/components/item
+      itemTitle="Домофония"
+      itemSubtitle="Видеодомофон с датчиком движения и удобным мобильным приложением"
+      btnText=""
+      img="img/main-page/useful-information/image.jpg"
+    }}
+    {{> main-page/useful-information/components/item
+      itemTitle="Роуминг"
+      itemSubtitle="Домашние цены в путешествиях всему миру!"
+      btnText=""
+      img="img/main-page/useful-information/image.jpg"
+    }}
+    {{> main-page/useful-information/components/item
+      itemTitle="Приложение Таттелеком"
+      itemSubtitle="Максимум возможностей для управления счётом и услугами"
+      btnText=""
+      img="img/main-page/useful-information/image.jpg"
+    }}
+  </ul>
 </section>
