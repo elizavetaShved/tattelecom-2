@@ -88,7 +88,12 @@
   align-items: center;
 
   & + & {
-    border-left: 1px solid #E7F2FA;
+    padding-left: 0;
+
+    .header__logo {
+      border-left: 1px solid #E7F2FA;
+      padding-left: 2.4rem;
+    }
   }
 }
 
