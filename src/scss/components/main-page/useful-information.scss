@@ -1,3 +1,22 @@
-.useful-information {
-  margin-bottom: 86rem;
+.useful-information__item-wrapper {
+  position: relative;
+  z-index: 1;
+
+  &.mod-white {
+    color: #fff;
+  }
+}
+
+.useful-information__item-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.useful-information__item-subtitle {
+  max-width: 42%;
 }

@@ -7,7 +7,7 @@
   border-radius: 10px;
   color: #fff;
   border: 1px solid transparent;
-  transition: background-color 250ms, border-color 250ms;
+  transition: background-color 250ms, border-color 250ms, color 250ms;
   white-space: nowrap;
 
   &:hover {
@@ -36,11 +36,13 @@
     &.mod-black {
       color: #000;
       border-color: #000;
+    }
 
+    &.mod-white, &.mod-black {
       &:hover {
         color: var(--main-color);
         border-color: var(--main-color);
-        background-color: #fff;
+        background-color: transparent;
       }
     }
   }

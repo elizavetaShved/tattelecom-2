@@ -19,8 +19,8 @@
   border-radius: 10px;
   color: #fff;
   border: 1px solid transparent;
-  -webkit-transition: background-color 250ms, border-color 250ms;
-  transition: background-color 250ms, border-color 250ms;
+  -webkit-transition: background-color 250ms, border-color 250ms, color 250ms;
+  transition: background-color 250ms, border-color 250ms, color 250ms;
   white-space: nowrap; }
   .gl__main-btn:hover {
     background-color: var(--main-color-hover); }
@@ -39,10 +39,10 @@
     .gl__main-btn.mod-transparent.mod-black {
       color: #000;
       border-color: #000; }
-      .gl__main-btn.mod-transparent.mod-black:hover {
-        color: var(--main-color);
-        border-color: var(--main-color);
-        background-color: #fff; }
+    .gl__main-btn.mod-transparent.mod-white:hover, .gl__main-btn.mod-transparent.mod-black:hover {
+      color: var(--main-color);
+      border-color: var(--main-color);
+      background-color: transparent; }
   .gl__main-btn.mod-dark-background {
     background-color: transparent;
     border-color: var(--main-color); }
@@ -387,7 +387,7 @@ section {
 
 .gl__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 3fr 2fr;
   grid-gap: 4rem; }
 
 .gl__grid-item {
@@ -402,13 +402,17 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 30px;
-  background-color: var(--main-background); }
+  background-color: var(--main-background);
+  overflow: hidden; }
   .gl__grid-item.mod-main {
     grid-row: 1 / 3;
     padding: 3.4rem 4rem; }
   .gl__grid-item.mod-secondary {
     padding: 2rem 2.4rem;
     min-height: 22rem; }
+
+.gl__grid-item-head {
+  margin-bottom: 2rem; }
 
 .gl__grid-main-item-title {
   font-weight: 600;
@@ -417,6 +421,12 @@ section {
   letter-spacing: 0.02em;
   margin-bottom: 5.6rem;
   max-width: 44rem; }
+
+.gl__grid-main-item-subtitle {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem; }
 
 .gl__grid-secondary-item-title {
   font-weight: 600;
@@ -427,8 +437,7 @@ section {
 .gl__grid-secondary-item-subtitle {
   font-size: 1.6rem;
   line-height: 2rem;
-  letter-spacing: 0.02em;
-  margin-bottom: 2rem; }
+  letter-spacing: 0.02em; }
 
 @media screen and (min-width: 1400px) {
   .gl-fl-show {
@@ -600,7 +609,8 @@ section {
   padding: 1.4rem 2rem;
   font-weight: 300;
   font-size: 2.4rem;
-  line-height: 3rem; }
+  line-height: 3rem;
+  width: 100%; }
   .gl-input__input::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.2); }
   .gl-input__input::-moz-placeholder {
@@ -1449,8 +1459,24 @@ section {
 .news-list__link-arrow-wrapper {
   margin-top: 0; }
 
-.useful-information {
-  margin-bottom: 86rem; }
+.useful-information__item-wrapper {
+  position: relative;
+  z-index: 1; }
+  .useful-information__item-wrapper.mod-white {
+    color: #fff; }
+
+.useful-information__item-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1; }
+
+.useful-information__item-subtitle {
+  max-width: 42%; }
 
 .application {
   padding: 11rem 0;

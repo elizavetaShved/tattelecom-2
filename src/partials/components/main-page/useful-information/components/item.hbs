@@ -1,19 +1,17 @@
-<li class="gl-slider__slide useful-information__slide-wrapper">
-  <a class="gl__link-arrow-container useful-information__slide">
-    <div class="useful-information__slide-image-wrapper">
-      <img src="{{ img }}" alt="" class="useful-information__slide-image">
+<div class="useful-information__item-wrapper gl__grid-item {{#if isMain}}mod-main{{else}}mod-secondary{{/if}} {{#if isWhite}}mod-white{{/if}}">
+  <img src="{{ itemImg }}" alt="" class="useful-information__item-background">
+
+  <div class="gl__grid-item-head">
+    <div class="{{#if isMain}}gl__grid-main-item-title{{else}}gl__grid-secondary-item-title{{/if}}">
+      {{ itemTitle }}
     </div>
-    <div class="gl__link-arrow-block useful-information__slide-content">
-      <div class="useful-information__slide-content-text">
-        {{ title }}
-      </div>
-      <div class="gl__link-arrow-wrapper">
-        <div class="gl__link-arrow-link">
-          <svg width="26" height="26" aria-hidden="true" class="gl__link-arrow-icon">
-            <use xlink:href="#arrow-line-right"></use>
-          </svg>
-        </div>
-      </div>
+
+    <div class="useful-information__item-subtitle {{#if isMain}}gl__grid-main-item-subtitle{{else}}gl__grid-secondary-item-subtitle{{/if}}">
+      {{ itemSubtitle }}
     </div>
-  </a>
-</li>
+  </div>
+
+  <div>
+    <button class="gl__main-btn mod-transparent {{#if isWhite}}mod-white{{ else }}mod-black{{/if}}">{{ itemBtnText }}</button>
+  </div>
+</div>

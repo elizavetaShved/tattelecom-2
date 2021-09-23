@@ -1,23 +1,28 @@
 <section class="useful-information" id="useful-information-host">
-  <h2 class="gl__title">Полезная информация</h2>
-  <ul class="useful-information__list">
-    {{> main-page/useful-information/components/item
-      itemTitle="Домофония"
-      itemSubtitle="Видеодомофон с датчиком движения и удобным мобильным приложением"
-      btnText=""
-      img="img/main-page/useful-information/image.jpg"
-    }}
-    {{> main-page/useful-information/components/item
-      itemTitle="Роуминг"
-      itemSubtitle="Домашние цены в путешествиях всему миру!"
-      btnText=""
-      img="img/main-page/useful-information/image.jpg"
-    }}
-    {{> main-page/useful-information/components/item
-      itemTitle="Приложение Таттелеком"
-      itemSubtitle="Максимум возможностей для управления счётом и услугами"
-      btnText=""
-      img="img/main-page/useful-information/image.jpg"
-    }}
-  </ul>
+  <div class="gl__page-content">
+    <h2 class="gl__title">Полезная информация</h2>
+    <ul class="gl__grid">
+      {{> main-page/useful-information/components/item
+        isMain=true
+        itemTitle="Домофония"
+        itemSubtitle="Видеодомофон с датчиком движения и удобным мобильным приложением"
+        itemBtnText="Узнать подробнее"
+        itemImg="img/main-page/useful-information/background-3.jpg"
+        isWhite=true
+      }}
+      {{> main-page/useful-information/components/item
+        itemTitle="Роуминг"
+        itemSubtitle="Домашние цены в путешествиях всему миру!"
+        itemBtnText="Подключить"
+        itemImg="img/main-page/useful-information/background-2.jpg"
+        isWhite=true
+      }}
+      {{> main-page/useful-information/components/item
+        itemTitle="Приложение Таттелеком"
+        itemSubtitle="Максимум возможностей для управления счётом и услугами"
+        itemBtnText="Скачать приложение"
+        itemImg="img/main-page/useful-information/background-1.jpg"
+      }}
+    </ul>
+  </div>
 </section>
