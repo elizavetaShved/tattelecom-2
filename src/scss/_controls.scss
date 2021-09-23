@@ -3,7 +3,7 @@
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2rem;
-  background: var(--main-color);
+  background-color: var(--main-color);
   border-radius: 10px;
   color: #fff;
   border: 1px solid transparent;
@@ -11,7 +11,7 @@
   white-space: nowrap;
 
   &:hover {
-    background: var(--main-color-hover);
+    background-color: var(--main-color-hover);
   }
 
   &.mod-transparent {
@@ -20,11 +20,27 @@
     border-color: var(--main-color);
 
     &:hover {
-      background: var(--main-color);
+      background-color: var(--main-color);
       color: #fff;
 
       svg {
         fill: #fff;
+      }
+    }
+
+    &.mod-white {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    &.mod-black {
+      color: #000;
+      border-color: #000;
+
+      &:hover {
+        color: var(--main-color);
+        border-color: var(--main-color);
+        background-color: #fff;
       }
     }
   }
@@ -34,7 +50,7 @@
     border-color: var(--main-color);
 
     &:hover {
-      background: var(--main-color);
+      background-color: var(--main-color);
       color: #fff;
       border-color: transparent;
     }

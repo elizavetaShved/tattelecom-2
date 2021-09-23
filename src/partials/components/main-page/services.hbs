@@ -1,0 +1,70 @@
+<section class="services" id="services-host">
+  <div class="gl__page-content">
+    <div class="gl__grid">
+      <div class="gl__grid-item mod-main">
+        <div>
+          <div class="gl__grid-main-item-title">Быстрое пополнение счёта</div>
+          <div class="services__menu-radio-wrapper">
+            {{> common/menu-radio
+              menuItemName="services-list-menu"
+              menuItemTitle1="Мобильная связь" menuItemTitle2="Телевидение" menuItemTitle3="Интернет"
+            }}
+          </div>
+
+          <form class="services__form">
+            {{> common/input-main
+              type="tel"
+              placeholder="+7 000 000-00-00"
+              name="services-tel"
+            }}
+            {{> common/input-main
+              type="text"
+              placeholder="0 ₽"
+              name="services-price"
+            }}
+            <button type="submit" class="gl__main-btn services__form-btn">
+              Продолжить
+            </button>
+          </form>
+        </div>
+
+        <div class="services__form-hint">
+          Нажимая кнопку «Продолжить», вы принимаете условия <a href="" class="link">пользовательского соглашения</a>
+        </div>
+      </div>
+
+      <div class="services__grid-secondary-item gl__grid-item mod-secondary">
+        <img src="img/main-page/services/background-1.png" alt="" class="services__grid-item-background">
+        <div>
+          <div class="services__grid-item-content">
+            <div class="gl__grid-secondary-item-title">Личный кабинет</div>
+            <div class="gl__grid-secondary-item-subtitle">Максимум возможностей для управления счётом и услугами</div>
+          </div>
+        </div>
+        <div class="services__grid-item-content">
+          <button type="button" class="gl__main-btn mod-transparent mod-black">
+            Войти
+          </button>
+        </div>
+      </div>
+
+      <div class="services__grid-secondary-item gl__grid-item mod-secondary">
+        <img src="img/main-page/services/background-2.png" alt="" class="services__grid-item-background">
+        <div class="services__grid-item-content">
+          <div class="gl__grid-secondary-item-title">Переходите на «Летай» со своим номером</div>
+        </div>
+
+        <form class="services__grid-secondary-item-form">
+          {{> common/input-main
+            type="tel"
+            placeholder="+7 000 000-00-00"
+            name="services-tel"
+          }}
+          <button type="submit" class="gl__main-btn services__grid-secondary-item-form-btn">
+            Войти
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
